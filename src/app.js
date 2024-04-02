@@ -7,7 +7,6 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Tony");
 
   let who = ["The dog", "my grandma", "The mailman", "The bird"];
   let action = ["ate", "peed", "crushed", "broke"];
@@ -32,6 +31,6 @@ window.onload = function() {
   let randomWhen = selectArrayElement(when, when.length);
 
   let escuse = `${randomWho} ${randomAction} ${randomWhat} ${randomWhen}`;
-
-  console.log(escuse);
+  const htmlElement = document.querySelector(".excuse");
+  htmlElement.innerHTML = escuse;
 };
